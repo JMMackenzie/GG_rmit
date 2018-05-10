@@ -96,7 +96,7 @@ pig,30
 
 If we didn't want 'dog', 'cat' or 'pig' as the labels, we could override them:
 ```
-plot <- plot + scale_x_discrete("Animal", "Canine", "Feline", "Porcine")
+plot <- plot + scale_x_discrete("Animal", labels=c("Canine", "Feline", "Porcine"))
 ```
 
 Facets
@@ -127,4 +127,8 @@ More Examples and Information
 * [50 different plots](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 * [Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 * [Official Documentation](http://ggplot2.tidyverse.org/reference/)
-* [Bad Graphs - What not to do!] (http://people.stat.sfu.ca/~cschwarz/Stat-650/Notes/PDF/ChapterBadgraphs.pdf)
+* [Bad Graphs - What not to do!](http://people.stat.sfu.ca/~cschwarz/Stat-650/Notes/PDF/ChapterBadgraphs.pdf)
+* [Save the Pies for Dessert](https://courses.washington.edu/info424/2007/readings/Save%20the%20Pies%20for%20Dessert.pdf)
+* [Some examples from "How to lie with Statistics"](https://shrineodreams.wordpress.com/2013/01/22/good-books-how-to-lie-with-statistics-darrell-huff/)
+* [How to lie with statistics](https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics)
+* [A field guide to lies and statistics](https://en.wikipedia.org/wiki/A_Field_Guide_to_Lies)
