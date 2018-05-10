@@ -30,7 +30,7 @@ plot <- ggplot(data,aes(x=factor(algo), y=time_ms, group=interaction(algo,heap),
 plot <- plot + geom_boxplot()
 
 # Facet into one facet per k value
-plot <- plot + facet_grid(k ~ .)
+plot <- plot + facet_grid(. ~ k)
 
 plot <- plot + scale_x_discrete("Algorithm", labels=c("BMW","Wand"))
 
@@ -48,5 +48,5 @@ plot <- plot + theme(text = element_text(family = "Linux Libertine O", size=22))
 # Example of putting the legend at the top of the graph
 plot <- plot + theme(legend.position="top")
 
-ggsave(plot,file="cmp.pdf",width=12,height=5, device=cairo_pdf)
+ggsave(plot,file="cmp.pdf",width=10,height=7, device=cairo_pdf)
 embedFonts("cmp.pdf",options='-c ".setpdfwrite <</NeverEmbed [ ]>> setdistillerparams" -dSubsetFonts=true -dCompressFonts=true -dCompatibilityLevel=1.4')
